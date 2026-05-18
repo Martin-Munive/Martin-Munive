@@ -24,6 +24,10 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    <filter id="redMarkShadow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#7F1D1D" flood-opacity="0.72"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#EF4444" flood-opacity="0.50"/>
+    </filter>
   </defs>
 
   <rect width="1200" height="320" fill="url(#blueField)"/>
@@ -38,18 +42,21 @@
     <path d="M1040 0V320" stroke="#1E3A8A"/>
   </g>
 
-  <path d="M110 224C258 188 356 209 480 226C645 249 764 225 907 184C982 162 1050 153 1120 160" stroke="url(#redLine)" stroke-width="5" stroke-linecap="round" opacity="0.85" filter="url(#softGlow)">
+  <path d="M110 224C258 188 356 209 480 226C645 249 764 225 907 184C982 162 1050 153 1120 160" stroke="url(#redLine)" stroke-width="3" stroke-linecap="round" opacity="0.42" filter="url(#softGlow)">
     <animate attributeName="d" dur="7s" repeatCount="indefinite"
       values="M110 224C258 188 356 209 480 226C645 249 764 225 907 184C982 162 1050 153 1120 160;
               M110 210C250 232 362 218 500 190C648 160 770 176 916 212C992 230 1060 224 1120 198;
               M110 224C258 188 356 209 480 226C645 249 764 225 907 184C982 162 1050 153 1120 160"/>
   </path>
 
-  <g filter="url(#softGlow)">
-    <path d="M527 207V105H553L600 169L647 105H673V207H643V154L607 203H593L557 154V207H527Z" fill="#EF4444"/>
+  <g filter="url(#redMarkShadow)">
+    <path d="M492 218V96H531L600 181L669 96H708V218H668V156L618 218H582L532 156V218H492Z" fill="#B91C1C"/>
+    <path d="M522 96L600 193L678 96H708L618 218H582L492 96H522Z" fill="#EF4444"/>
+    <path d="M532 218V154L582 218H532Z" fill="#DC2626" opacity="0.98"/>
+    <path d="M668 218V154L618 218H668Z" fill="#DC2626" opacity="0.98"/>
   </g>
 
-  <text x="600" y="140" text-anchor="middle" fill="#F8FAFC" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="54" font-weight="800">Martín Munive</text>
-  <text x="600" y="185" text-anchor="middle" fill="#BFDBFE" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" font-weight="600">Medicine + Software + Data Systems</text>
-  <text x="600" y="222" text-anchor="middle" fill="#FCA5A5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="17" font-weight="500">clinical software · oncology data · bioinformatics · technical education</text>
+  <text x="600" y="136" text-anchor="middle" fill="#F8FAFC" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="52" font-weight="800">Martín Munive</text>
+  <text x="600" y="181" text-anchor="middle" fill="#BFDBFE" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" font-weight="600">Medicine + Software + Data Systems</text>
+  <text x="600" y="231" text-anchor="middle" fill="#FCA5A5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="17" font-weight="500">clinical software · oncology data · bioinformatics · technical education</text>
 </svg>

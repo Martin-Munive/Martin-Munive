@@ -2,8 +2,6 @@
 
 ![Header](assets/profile-header.svg)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=800&color=38BDF8&center=true&vCenter=true&width=900&lines=General+Physician+%7C+Software+Analyst+and+Programmer;Clinical+software%2C+oncology+data+and+bioinformatics;Building+tools+where+medicine+meets+computation)](https://git.io/typing-svg)
-
 [![GitHub followers](https://img.shields.io/github/followers/Martin-Munive?style=for-the-badge&logo=github&color=0ea5e9)](https://github.com/Martin-Munive)
 [![Profile views](https://komarev.com/ghpvc/?username=Martin-Munive&style=for-the-badge&color=16a34a)](https://github.com/Martin-Munive)
 [![Medicine](https://img.shields.io/badge/Medicine-Clinical%20Reasoning-ef4444?style=for-the-badge&logo=redcross&logoColor=white)](#clinical--scientific-software)
