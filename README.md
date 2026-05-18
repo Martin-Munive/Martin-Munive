@@ -1,6 +1,6 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&height=260&color=0:202020,35:002020,62:202040,82:C02020,100:E04020&text=Mart%C3%ADn%20Munive&fontColor=ffffff&fontSize=62&fontAlignY=38&desc=Medicine%20%2B%20Software%20%2B%20Data%20Systems&descAlignY=58&animation=fadeIn)
+![Header](assets/profile-header.svg)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=800&color=38BDF8&center=true&vCenter=true&width=900&lines=General+Physician+%7C+Software+Analyst+and+Programmer;Clinical+software%2C+oncology+data+and+bioinformatics;Building+tools+where+medicine+meets+computation)](https://git.io/typing-svg)
 
