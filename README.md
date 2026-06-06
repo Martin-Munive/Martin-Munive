@@ -140,8 +140,8 @@ research tools -> bioinformatics utilities and reproducible computational workfl
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Martin-Munive&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true" alt="GitHub stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Martin-Munive&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Martin-Munive&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true" alt="Estadísticas GitHub" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Martin-Munive&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Lenguajes Top" />
 
 <br>
 
@@ -149,7 +149,7 @@ research tools -> bioinformatics utilities and reproducible computational workfl
 
 <br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Martin-Munive&theme=react-dark&hide_border=true&area=true&custom_title=Contribution%20Graph" alt="Contribution graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Martin-Munive&theme=react-dark&hide_border=true&area=true&custom_title=Contribution%20Graph" alt="Gráfica de contribuciones" />
 
 </div>
 
