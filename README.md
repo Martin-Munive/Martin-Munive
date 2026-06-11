@@ -153,7 +153,9 @@ research tools -> bioinformatics utilities and reproducible computational workfl
 
 </div>
 
-## Scientific Anchor
+## Scientific Contributions
+
+### Published Research Software
 
 Proteios v1.0 was used in published neuropeptide evolution research:
 
@@ -162,6 +164,14 @@ Proteios v1.0 was used in published neuropeptide evolution research:
 - DOI: <https://doi.org/10.1007/s00239-023-10146-9>
 - PubMed: <https://pubmed.ncbi.nlm.nih.gov/38102415/>
 - Repository: <https://github.com/Martin-Munive/NCBI-Web-Crawler-Proteios>
+
+### Patent Documentation
+
+Listed coinventor in patent family **CO2017004500A1 / WO2018203280A1**, related to nucleotide mixtures for nucleic acid amplification and sequencing. The patent records list Martin Munive as **Nestor Martin Munive Arguelles**.
+
+- Documentation repository: <https://github.com/Martin-Munive/PATENT_Nucleotide-Mixtures-DNA-RNA-Amplification>
+- Google Patents: <https://patents.google.com/patent/CO2017004500A1/en>
+- PCT publication: <https://patents.google.com/patent/WO2018203280A1/en>
 
 ## Design Philosophy
 
