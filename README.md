@@ -140,16 +140,17 @@ research tools -> bioinformatics utilities and reproducible computational workfl
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Martin-Munive&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true" alt="Estadísticas GitHub" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Martin-Munive&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Lenguajes Top" />
+<img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Martin-Munive&theme=github_dark" alt="GitHub profile statistics" />
+<img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Martin-Munive&theme=github_dark" alt="Most committed languages" />
+<img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Martin-Munive&theme=github_dark&utcOffset=-5" alt="Productive time" />
 
 <br>
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=Martin-Munive&theme=tokyonight&hide_border=true" alt="GitHub streak" />
+<img src="https://streak-stats.demolab.com?user=Martin-Munive&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub contribution streak" />
 
 <br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Martin-Munive&theme=react-dark&hide_border=true&area=true&custom_title=Contribution%20Graph" alt="Gráfica de contribuciones" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Martin-Munive&theme=github_dark" alt="GitHub contribution profile details" />
 
 </div>
 
