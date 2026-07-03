@@ -49,11 +49,11 @@
               M110 224C258 188 356 209 480 226C645 249 764 225 907 184C982 162 1050 153 1120 160"/>
   </path>
 
-  <g filter="url(#redMarkShadow)">
-    <path d="M492 218V96H531L600 181L669 96H708V218H668V156L618 218H582L532 156V218H492Z" fill="#B91C1C"/>
-    <path d="M522 96L600 193L678 96H708L618 218H582L492 96H522Z" fill="#EF4444"/>
-    <path d="M532 218V154L582 218H532Z" fill="#DC2626" opacity="0.98"/>
-    <path d="M668 218V154L618 218H668Z" fill="#DC2626" opacity="0.98"/>
+  <g filter="url(#redMarkShadow)" opacity="0.94">
+    <path d="M468 225V90H522L600 176L678 90H732V225H686V154L622 225H578L514 154V225H468Z" fill="#991B1B"/>
+    <path d="M514 90L600 187L686 90H732L622 225H578L468 90H514Z" fill="#EF4444" opacity="0.92"/>
+    <path d="M514 154V225H468V90L514 154Z" fill="#B91C1C"/>
+    <path d="M686 154V225H732V90L686 154Z" fill="#B91C1C"/>
   </g>
 
   <text x="600" y="136" text-anchor="middle" fill="#F8FAFC" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="52" font-weight="800">Martín Munive</text>
