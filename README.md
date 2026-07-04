@@ -140,9 +140,8 @@ research tools -> bioinformatics utilities and reproducible computational workfl
 
 <div align="center">
 
-<img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Martin-Munive&theme=github_dark" alt="GitHub profile statistics" />
-<img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Martin-Munive&theme=github_dark" alt="Most committed languages" />
-<img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Martin-Munive&theme=github_dark&utcOffset=-5" alt="Productive time" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Martin-Munive&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true" alt="GitHub stats" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Martin-Munive&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages" />
 
 <br>
 
@@ -150,7 +149,7 @@ research tools -> bioinformatics utilities and reproducible computational workfl
 
 <br>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Martin-Munive&theme=github_dark" alt="GitHub contribution profile details" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Martin-Munive&theme=react-dark&hide_border=true&area=true&custom_title=Daily%20%2F%20Weekly%20Contribution%20Rhythm" alt="Daily and weekly GitHub contribution rhythm" />
 
 </div>
 
