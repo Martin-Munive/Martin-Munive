@@ -2,10 +2,9 @@
 
 ![Header](assets/profile-header.svg)
 
-[![GitHub followers](https://img.shields.io/github/followers/Martin-Munive?style=for-the-badge&logo=github&color=0ea5e9)](https://github.com/Martin-Munive)
-[![Profile views](https://komarev.com/ghpvc/?username=Martin-Munive&style=for-the-badge&color=16a34a)](https://github.com/Martin-Munive)
-[![Medicine](https://img.shields.io/badge/Medicine-Clinical%20Reasoning-ef4444?style=for-the-badge&logo=redcross&logoColor=white)](#clinical--scientific-software)
-[![Software](https://img.shields.io/badge/Software-Systems%20Builder-7c3aed?style=for-the-badge&logo=visualstudiocode&logoColor=white)](#engineering-map)
+**Clinical software · Biomedical data · Medical education · Research tools**
+
+[Featured systems](#featured-systems) · [Engineering map](#engineering-map) · [GitHub signals](#github-signals) · [Scientific contributions](#scientific-contributions)
 
 </div>
 
@@ -13,7 +12,7 @@
 
 ## Clinical + Scientific Software
 
-I build software at the intersection of medicine, data, automation and learning systems.
+I build software at the intersection of medicine, data, automation and education systems.
 
 My work focuses on tools that make complex information easier to retrieve, structure and use: clinical decision support prototypes, oncology regulatory data, biomedical retrieval systems, medical education platforms, bioinformatics utilities and technical books for learning programming through biomedical problems.
 
@@ -30,7 +29,7 @@ mindmap
       JavaScript / Node.js
       React / React Native
       SQLite / PostgreSQL
-      RAG systems
+      Retrieval systems
     Research
       Bioinformatics
       Scientific documentation
@@ -98,8 +97,8 @@ mindmap
       </p>
     </td>
     <td width="50%">
-      <h3><a href="https://github.com/Martin-Munive/RESIDENCIA_Q-R">SIFCEM</a></h3>
-      <p>Medical education and evaluation system for clinical reasoning, distractor logic, structured feedback and specialty-based learning.</p>
+      <h3><a href="https://github.com/Martin-Munive/CEM_QA">CEM Q&A / SIFCEM</a></h3>
+      <p>Question-and-answer platform for health professionals, designed around clinical reasoning, specialty classification, distractor logic, structured feedback and progress tracking.</p>
       <p>
         <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white">
         <img src="https://img.shields.io/badge/React%20Native-61DAFB?logo=react&logoColor=111827">
@@ -113,14 +112,14 @@ mindmap
 
 <div align="center">
 
-[![My Skills](https://skillicons.dev/icons?i=python,js,nodejs,react,sqlite,postgres,git,github,html,css,md,vscode&perline=6)](https://skillicons.dev)
+<strong>Python</strong> · <strong>JavaScript / Node.js</strong> · <strong>React / React Native</strong> · <strong>SQLite / PostgreSQL</strong> · <strong>GitHub Actions</strong> · <strong>Markdown / Jupyter Book</strong>
 
 </div>
 
 | Area | What I build | Representative repositories |
 |---|---|---|
-| Clinical systems | Local tools, oncology data, pediatric triage, medical education | [INVIMA](https://github.com/Martin-Munive/INVIMA-HematoOncologia), [AIEPI](https://github.com/Martin-Munive/AIEPI), [SIFCEM](https://github.com/Martin-Munive/RESIDENCIA_Q-R) |
-| AI / retrieval | RAG prototypes and document exploration for biomedical material | [RAG Medicina Oncologica](https://github.com/Martin-Munive/RAG_Medicina-Oncologica) |
+| Clinical systems | Local tools, oncology data, pediatric triage, medical education | [INVIMA](https://github.com/Martin-Munive/INVIMA-HematoOncologia), [AIEPI](https://github.com/Martin-Munive/AIEPI), [CEM Q&A / SIFCEM](https://github.com/Martin-Munive/CEM_QA) |
+| Retrieval systems | Document exploration and traceable biomedical retrieval workflows | [RAG Medicina Oncologica](https://github.com/Martin-Munive/RAG_Medicina-Oncologica) |
 | Bioinformatics | Protein sequence retrieval, motif filtering and scientific software documentation | [Proteios](https://github.com/Martin-Munive/NCBI-Web-Crawler-Proteios), [NCBI-Proteios legacy](https://github.com/Martin-Munive/NCBI-Proteios) |
 | Books and education | Technical books with biomedical examples and progressive computational thinking | [Materia Medica Digitalis](https://github.com/Martin-Munive/Materia_Medica_Digitalis), [Python por Fragmentos](https://github.com/Martin-Munive/Python-por-fragmentos-Libro-de-estudio) |
 | Automation and bots | Community automation, message routing and operational utilities | [DISCORD Channels Bot](https://github.com/Martin-Munive/DISCORD_Channels-Bot) |
@@ -131,7 +130,7 @@ mindmap
 ```text
 medicine       -> clinical reasoning, oncology, pediatric triage, medical education
 software       -> Python, JavaScript, local-first tools, data systems, automation
-AI systems     -> RAG, retrieval, document workflows, evaluation-aware prototypes
+retrieval      -> document workflows, traceable search, evaluation-aware prototypes
 publishing     -> web books, scientific documentation, technical learning paths
 research tools -> bioinformatics utilities and reproducible computational workflows
 ```
@@ -140,16 +139,17 @@ research tools -> bioinformatics utilities and reproducible computational workfl
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Martin-Munive&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true" alt="GitHub stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Martin-Munive&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages" />
+<img src="assets/generated/github-signals.svg" alt="GitHub signals generated inside this repository" />
 
 <br>
 
-<img src="https://streak-stats.demolab.com?user=Martin-Munive&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub contribution streak" />
+<img src="assets/generated/top-languages.svg" alt="Top languages generated inside this repository" />
 
 <br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Martin-Munive&theme=react-dark&hide_border=true&area=true&custom_title=Daily%20%2F%20Weekly%20Contribution%20Rhythm" alt="Daily and weekly GitHub contribution rhythm" />
+<img src="assets/generated/contribution-rhythm.svg" alt="Daily and weekly contribution rhythm generated inside this repository" />
+
+<sub>These components are generated locally by this repository. See <a href="docs/profile-components.md">profile component architecture</a>.</sub>
 
 </div>
 
@@ -182,9 +182,3 @@ I like building systems that are:
 - local-first when privacy or reproducibility matters;
 - honest about their current stage;
 - useful for learning, research or decision support without replacing expert judgment.
-
-<div align="center">
-
-![Footer](https://capsule-render.vercel.app/api?type=waving&height=130&section=footer&color=0:E04020,38:C02020,68:202040,100:002020)
-
-</div>

@@ -1,0 +1,47 @@
+name: Generate profile components
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+      - scripts/build_profile_cards.py
+      - .github/workflows/profile-components.yml
+
+permissions:
+  contents: write
+
+jobs:
+  profile-components:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate local SVG components
+        run: python scripts/build_profile_cards.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USERNAME: Martin-Munive
+
+      - name: Commit generated SVG components
+        run: |
+          if [ -n "$(git status --porcelain assets/generated)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/generated
+            git commit -m "Profile: actualiza componentes generados"
+            git push
+          else
+            echo "No generated component changes."
+          fi
