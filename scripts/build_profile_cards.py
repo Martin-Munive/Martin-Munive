@@ -268,7 +268,7 @@ def build_languages_card(languages: dict[str, int]) -> str:
         "Top Languages",
         "Distribucion por bytes reportados por GitHub Linguist en repositorios publicos propios",
         820,
-        268,
+        324,
     )
     x = 28
     y = 88
@@ -286,8 +286,11 @@ def build_languages_card(languages: dict[str, int]) -> str:
                 f'<text x="756" y="{row_y + 11}" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" text-anchor="end" fill="{MUTED}">{pct * 100:.1f}%</text>',
             ]
         )
-    parts.append(
-        f'<text x="28" y="244" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11" fill="{MUTED}">Markdown, documentacion, datos y codigo generado pueden quedar excluidos por reglas de Linguist.</text>'
+    parts.extend(
+        [
+            f'<text x="28" y="288" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11" fill="{MUTED}">Fuente: GitHub Linguist por bytes en repositorios publicos propios.</text>',
+            f'<text x="28" y="306" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11" fill="{MUTED}">Markdown, documentacion, datos y codigo generado pueden quedar excluidos.</text>',
+        ]
     )
     return svg_footer(parts)
 
