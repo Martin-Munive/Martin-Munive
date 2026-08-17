@@ -143,7 +143,7 @@ research tools -> bioinformatics utilities and reproducible computational workfl
 
 <br>
 
-<img src="assets/generated/top-languages.svg" alt="Top languages generated inside this repository" />
+<img src="assets/generated/top-languages.svg" alt="Project-normalized language constellation generated inside this repository" />
 
 <br>
 

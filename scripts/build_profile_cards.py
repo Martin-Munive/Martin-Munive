@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import datetime as dt
 import html
 import json
@@ -35,6 +36,19 @@ AMBER = "#f59e0b"
 VIOLET = "#a78bfa"
 CYAN = "#06b6d4"
 GRID_EMPTY = "#1f2937"
+
+# GitHub's language endpoint occasionally counts generated platform wrappers as
+# first-class project languages. Keep corrections narrow, explicit and reviewable.
+REPOSITORY_LANGUAGE_EXCLUSIONS = {
+    "Control-insulinas": {
+        "C",
+        "C++",
+        "CMake",
+        "Kotlin",
+        "Objective-C",
+        "Swift",
+    }
+}
 
 
 def token() -> str | None:
@@ -106,17 +120,32 @@ def fetch_repos() -> list[dict[str, Any]]:
     return repos
 
 
-def fetch_languages(repos: list[dict[str, Any]]) -> dict[str, int]:
-    totals: dict[str, int] = {}
+def fetch_language_signals(repos: list[dict[str, Any]]) -> dict[str, dict[str, float | int]]:
+    signals: dict[str, dict[str, float | int]] = {}
     for repo in repos:
         if repo.get("fork") or repo.get("archived") or repo.get("name") == USERNAME:
             continue
         languages_url = repo.get("languages_url")
         if not languages_url:
             continue
-        for language, size in request_json(languages_url).items():
-            totals[language] = totals.get(language, 0) + int(size)
-    return totals
+        excluded = REPOSITORY_LANGUAGE_EXCLUSIONS.get(repo.get("name", ""), set())
+        languages = {
+            language: int(size)
+            for language, size in request_json(languages_url).items()
+            if language not in excluded and language != "Procfile" and int(size) > 0
+        }
+        repo_total = sum(languages.values())
+        if not repo_total:
+            continue
+        for language, size in languages.items():
+            signal = signals.setdefault(
+                language,
+                {"score": 0.0, "repositories": 0, "bytes": 0},
+            )
+            signal["score"] = float(signal["score"]) + size / repo_total
+            signal["repositories"] = int(signal["repositories"]) + 1
+            signal["bytes"] = int(signal["bytes"]) + size
+    return signals
 
 
 def fetch_contributions() -> dict[str, Any]:
@@ -257,40 +286,61 @@ def build_stats_card(repos: list[dict[str, Any]], contrib: dict[str, Any]) -> st
     return svg_footer(parts)
 
 
-def build_languages_card(languages: dict[str, int]) -> str:
-    total = sum(languages.values()) or 1
-    ranked = sorted(languages.items(), key=lambda item: item[1], reverse=True)
-    top = ranked[:7]
-    other = sum(size for _, size in ranked[7:])
-    if other:
-        top.append(("Other", other))
-    colors = [BLUE, GREEN, RED, AMBER, VIOLET, CYAN, "#f97316", "#64748b"]
+def build_language_constellation(signals: dict[str, dict[str, float | int]]) -> str:
+    ranked = sorted(
+        signals.items(),
+        key=lambda item: (float(item[1]["score"]), int(item[1]["repositories"])),
+        reverse=True,
+    )[:8]
+    total_score = sum(float(signal["score"]) for signal in signals.values()) or 1.0
+    colors = [BLUE, GREEN, AMBER, VIOLET, CYAN, RED, "#f97316", "#64748b"]
+    positions = [
+        (176, 126),
+        (356, 111),
+        (530, 137),
+        (660, 220),
+        (535, 292),
+        (350, 310),
+        (175, 283),
+        (94, 207),
+    ]
     parts = svg_header(
-        "Top Languages",
-        "Distribucion por bytes reportados por GitHub Linguist en repositorios publicos propios",
+        "Language Constellation",
+        "Project-normalized footprint; generated build languages are filtered by repository policy",
         820,
-        324,
+        390,
     )
-    x = 28
-    y = 88
-    max_width = 590
-    for index, (language, size) in enumerate(top):
-        pct = size / total
-        bar_width = max(4, int(max_width * pct))
+    center_x, center_y = 382, 211
+    parts.extend(
+        [
+            f'<circle cx="{center_x}" cy="{center_y}" r="58" fill="{PANEL}" stroke="{BORDER}" stroke-width="2"/>',
+            f'<circle cx="{center_x}" cy="{center_y}" r="73" fill="none" stroke="{BORDER}" stroke-width="1" stroke-dasharray="3 7"/>',
+            f'<text x="{center_x}" y="{center_y - 7}" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="{MUTED}">PORTFOLIO</text>',
+            f'<text x="{center_x}" y="{center_y + 18}" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="{TEXT}">{len(ranked)}/{len(signals)}</text>',
+            f'<text x="{center_x}" y="{center_y + 35}" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" fill="{MUTED}">SHOWN / TOTAL</text>',
+        ]
+    )
+    for index, ((language, signal), (x, y)) in enumerate(zip(ranked, positions)):
+        score = float(signal["score"])
+        repositories = int(signal["repositories"])
+        share = score / total_score
+        radius = 23 + min(24, 75 * share)
         color = colors[index % len(colors)]
-        row_y = y + index * 22
+        label_size = 10 if len(language) > 13 else 12
         parts.extend(
             [
-                f'<text x="{x}" y="{row_y + 11}" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" fill="{TEXT}">{esc(language)}</text>',
-                f'<rect x="150" y="{row_y}" width="{max_width}" height="12" rx="6" fill="{GRID_EMPTY}"/>',
-                f'<rect x="150" y="{row_y}" width="{bar_width}" height="12" rx="6" fill="{color}"/>',
-                f'<text x="756" y="{row_y + 11}" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" text-anchor="end" fill="{MUTED}">{pct * 100:.1f}%</text>',
+                f'<line x1="{center_x}" y1="{center_y}" x2="{x}" y2="{y}" stroke="{color}" stroke-width="{1.0 + 3.0 * share:.1f}" opacity="0.45"/>',
+                f'<circle cx="{x}" cy="{y}" r="{radius:.1f}" fill="{color}" fill-opacity="0.13" stroke="{color}" stroke-width="2"/>',
+                f'<circle cx="{x}" cy="{y}" r="4" fill="{color}"/>',
+                f'<text x="{x}" y="{y - 9}" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="{label_size}" font-weight="700" fill="{TEXT}">{esc(language)}</text>',
+                f'<text x="{x}" y="{y + 17}" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" fill="{MUTED}">{repositories} repo{"s" if repositories != 1 else ""}</text>',
+                f'<title>{esc(language)}: {share * 100:.1f}% project-normalized signal across {repositories} repositories</title>',
             ]
         )
     parts.extend(
         [
-            f'<text x="28" y="288" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11" fill="{MUTED}">Fuente: GitHub Linguist por bytes en repositorios publicos propios.</text>',
-            f'<text x="28" y="306" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11" fill="{MUTED}">Markdown, documentacion, datos y codigo generado pueden quedar excluidos.</text>',
+            f'<text x="28" y="366" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" fill="{MUTED}">Node size = normalized project signal. Each repository contributes the same total weight.</text>',
+            f'<text x="792" y="366" text-anchor="end" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" fill="{MUTED}">Source: GitHub Linguist API</text>',
         ]
     )
     return svg_footer(parts)
@@ -441,13 +491,26 @@ def build_engineering_pulse(contrib: dict[str, Any]) -> str:
     return svg_footer(parts)
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--card",
+        choices=("all", "languages"),
+        default="all",
+        help="Generate every card or only the language constellation.",
+    )
+    return parser.parse_args()
+
+
 def main() -> int:
+    args = parse_args()
     repos = fetch_repos()
-    contrib = fetch_contributions()
-    languages = fetch_languages(repos)
-    write_svg(OUT_DIR / "github-signals.svg", build_stats_card(repos, contrib))
-    write_svg(OUT_DIR / "top-languages.svg", build_languages_card(languages))
-    write_svg(OUT_DIR / "contribution-rhythm.svg", build_engineering_pulse(contrib))
+    signals = fetch_language_signals(repos)
+    write_svg(OUT_DIR / "top-languages.svg", build_language_constellation(signals))
+    if args.card == "all":
+        contrib = fetch_contributions()
+        write_svg(OUT_DIR / "github-signals.svg", build_stats_card(repos, contrib))
+        write_svg(OUT_DIR / "contribution-rhythm.svg", build_engineering_pulse(contrib))
     return 0
 
 

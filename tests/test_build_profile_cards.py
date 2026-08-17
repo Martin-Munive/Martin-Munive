@@ -56,5 +56,85 @@ class EngineeringPulseTests(unittest.TestCase):
             self.assertLessEqual(y, 370)
 
 
+class LanguageConstellationTests(unittest.TestCase):
+    def test_repository_policy_excludes_generated_flutter_wrappers(self) -> None:
+        repositories = [
+            {
+                "name": "Control-insulinas",
+                "fork": False,
+                "archived": False,
+                "languages_url": "https://example.test/control/languages",
+            },
+            {
+                "name": "analysis",
+                "fork": False,
+                "archived": False,
+                "languages_url": "https://example.test/analysis/languages",
+            },
+        ]
+        payloads = {
+            "https://example.test/control/languages": {
+                "C++": 220_870,
+                "C": 200_249,
+                "CMake": 122_402,
+                "Dart": 63_283,
+            },
+            "https://example.test/analysis/languages": {"Python": 9_000, "C++": 1_000},
+        }
+        original_request = profile_cards.request_json
+        try:
+            profile_cards.request_json = lambda url: payloads[url]
+            signals = profile_cards.fetch_language_signals(repositories)
+        finally:
+            profile_cards.request_json = original_request
+
+        self.assertEqual(signals["Dart"]["repositories"], 1)
+        self.assertEqual(signals["C++"]["repositories"], 1)
+        self.assertEqual(signals["C++"]["bytes"], 1_000)
+
+    def test_each_repository_contributes_equal_total_weight(self) -> None:
+        repositories = [
+            {
+                "name": "large",
+                "fork": False,
+                "archived": False,
+                "languages_url": "https://example.test/large/languages",
+            },
+            {
+                "name": "small",
+                "fork": False,
+                "archived": False,
+                "languages_url": "https://example.test/small/languages",
+            },
+        ]
+        payloads = {
+            "https://example.test/large/languages": {"JavaScript": 1_000_000},
+            "https://example.test/small/languages": {"Python": 100},
+        }
+        original_request = profile_cards.request_json
+        try:
+            profile_cards.request_json = lambda url: payloads[url]
+            signals = profile_cards.fetch_language_signals(repositories)
+        finally:
+            profile_cards.request_json = original_request
+
+        self.assertEqual(signals["JavaScript"]["score"], 1.0)
+        self.assertEqual(signals["Python"]["score"], 1.0)
+
+    def test_constellation_is_valid_fixed_size_svg(self) -> None:
+        signals = {
+            "Python": {"score": 2.0, "repositories": 3, "bytes": 10_000},
+            "TypeScript": {"score": 1.0, "repositories": 1, "bytes": 5_000},
+        }
+        svg = profile_cards.build_language_constellation(signals)
+        root = ET.fromstring(svg)
+
+        self.assertEqual(root.attrib["width"], "820")
+        self.assertEqual(root.attrib["height"], "390")
+        self.assertIn("Language Constellation", svg)
+        self.assertNotIn("Top Languages", svg)
+        self.assertNotIn(">C++<", svg)
+
+
 if __name__ == "__main__":
     unittest.main()
