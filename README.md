@@ -147,7 +147,7 @@ research tools -> bioinformatics utilities and reproducible computational workfl
 
 <br>
 
-<img src="assets/generated/contribution-rhythm.svg" alt="Daily and weekly contribution rhythm generated inside this repository" />
+<img src="assets/generated/contribution-rhythm.svg" alt="Engineering Pulse: 12-week contribution signal, cadence vector and momentum metrics" />
 
 <sub>These components are generated locally by this repository. See <a href="docs/profile-components.md">profile component architecture</a>.</sub>
 
