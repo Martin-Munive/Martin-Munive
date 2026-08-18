@@ -136,5 +136,28 @@ class LanguageConstellationTests(unittest.TestCase):
         self.assertNotIn(">C++<", svg)
 
 
+class ProfileSurfaceTests(unittest.TestCase):
+    def test_static_svgs_share_fixed_accessible_canvases(self) -> None:
+        root = SCRIPTS_DIR.parent
+        expected = {
+            root / "assets" / "profile-header.svg": ("1200", "340"),
+            root / "assets" / "clinical-systems-map.svg": ("820", "420"),
+        }
+        for path, dimensions in expected.items():
+            svg = ET.parse(path).getroot()
+            self.assertEqual(svg.attrib["width"], dimensions[0])
+            self.assertEqual(svg.attrib["height"], dimensions[1])
+            self.assertEqual(svg.attrib.get("role"), "img")
+
+    def test_readme_uses_local_map_and_only_public_representative_links(self) -> None:
+        readme = (SCRIPTS_DIR.parent / "README.md").read_text(encoding="utf-8")
+        self.assertIn("assets/clinical-systems-map.svg", readme)
+        self.assertNotIn("```mermaid", readme)
+        self.assertNotIn("Martin-Munive/AIEPI)", readme)
+        self.assertNotIn("Martin-Munive/MATER_LOTTO", readme)
+        self.assertNotIn("Martin-Munive/INVIMA-HematoOncologia", readme)
+        self.assertIn("Martin-Munive/Estadistica-con-Python", readme)
+
+
 if __name__ == "__main__":
     unittest.main()

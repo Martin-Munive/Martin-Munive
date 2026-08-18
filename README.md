@@ -16,40 +16,19 @@ I build software at the intersection of medicine, data, automation and education
 
 My work focuses on tools that make complex information easier to retrieve, structure and use: clinical decision support prototypes, oncology regulatory data, biomedical retrieval systems, medical education platforms, bioinformatics utilities and technical books for learning programming through biomedical problems.
 
-```mermaid
-mindmap
-  root((Martín Munive))
-    Medicine
-      Clinical reasoning
-      Oncology workflows
-      Pediatric triage
-      Medical education
-    Software
-      Python
-      JavaScript / Node.js
-      React / React Native
-      SQLite / PostgreSQL
-      Retrieval systems
-    Research
-      Bioinformatics
-      Scientific documentation
-      Data pipelines
-      Reproducible learning
-    Products
-      Apps
-      Books
-      Bots
-      Dashboards
-      Local tools
-```
+<div align="center">
+
+<img src="assets/clinical-systems-map.svg" alt="Clinical systems constellation connecting medicine, biomedical data, research and learning systems" />
+
+</div>
 
 ## Featured Systems
 
 <table>
   <tr>
     <td width="50%">
-      <h3><a href="https://github.com/Martin-Munive/INVIMA-HematoOncologia">INVIMA Hemato-Oncologia</a></h3>
-      <p>Local Python system for consolidating oncology drug information in Colombia from INVIMA, UNIRS, POS Populi and curated manual profiles.</p>
+      <h3><a href="https://github.com/Martin-Munive/INDICACIONES_VIGENTES_HEMATO-ONCOLOGIA">Indicaciones Vigentes Hemato-Oncologia</a></h3>
+      <p>Independent consultation system for current Colombian hemato-oncology indications derived from INVIMA registrations, UNIRS and UPC funding sources.</p>
       <p>
         <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white">
         <img src="https://img.shields.io/badge/SQLite-local-003B57?logo=sqlite&logoColor=white">
@@ -88,12 +67,12 @@ mindmap
   </tr>
   <tr>
     <td width="50%">
-      <h3><a href="https://github.com/Martin-Munive/AIEPI">AIEPI-Mobile</a></h3>
-      <p>Clinical software concept for pediatric triage and management based on AIEPI workflows, semaphorized risk classification and structured clinical logic.</p>
+      <h3><a href="https://github.com/Martin-Munive/Estadistica-con-Python">Statistics with Python for Health Sciences</a></h3>
+      <p>Executable book for learning statistical reasoning through clinical questions, uncertainty, modeling and reproducible evidence.</p>
       <p>
-        <img src="https://img.shields.io/badge/React%20Native-61DAFB?logo=react&logoColor=111827">
-        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white">
-        <img src="https://img.shields.io/badge/clinical%20logic-AIEPI-ef4444">
+        <img src="https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white">
+        <img src="https://img.shields.io/badge/Jupyter%20Book-executable-F37626?logo=jupyter&logoColor=white">
+        <img src="https://img.shields.io/badge/domain-clinical%20statistics-22c55e">
       </p>
     </td>
     <td width="50%">
@@ -112,18 +91,18 @@ mindmap
 
 <div align="center">
 
-<strong>Python</strong> · <strong>JavaScript / Node.js</strong> · <strong>React / React Native</strong> · <strong>SQLite / PostgreSQL</strong> · <strong>GitHub Actions</strong> · <strong>Markdown / Jupyter Book</strong>
+<strong>Python</strong> · <strong>JavaScript / TypeScript</strong> · <strong>React / React Native</strong> · <strong>SQLite / PostgreSQL</strong> · <strong>GitHub Actions</strong> · <strong>Jupyter Book</strong>
 
 </div>
 
 | Area | What I build | Representative repositories |
 |---|---|---|
-| Clinical systems | Local tools, oncology data, pediatric triage, medical education | [INVIMA](https://github.com/Martin-Munive/INVIMA-HematoOncologia), [AIEPI](https://github.com/Martin-Munive/AIEPI), [CEM Q&A / SIFCEM](https://github.com/Martin-Munive/CEM_QA) |
+| Clinical systems | Oncology data, anthropometric visualization and medical education | [Indicaciones Vigentes](https://github.com/Martin-Munive/INDICACIONES_VIGENTES_HEMATO-ONCOLOGIA), [AIEPI Graficas](https://github.com/Martin-Munive/AIEPI_GRAFICAS), [CEM Q&A / SIFCEM](https://github.com/Martin-Munive/CEM_QA) |
 | Retrieval systems | Document exploration and traceable biomedical retrieval workflows | [RAG Medicina Oncologica](https://github.com/Martin-Munive/RAG_Medicina-Oncologica) |
-| Bioinformatics | Protein sequence retrieval, motif filtering and scientific software documentation | [Proteios](https://github.com/Martin-Munive/NCBI-Web-Crawler-Proteios), [NCBI-Proteios legacy](https://github.com/Martin-Munive/NCBI-Proteios) |
-| Books and education | Technical books with biomedical examples and progressive computational thinking | [Materia Medica Digitalis](https://github.com/Martin-Munive/Materia_Medica_Digitalis), [Python por Fragmentos](https://github.com/Martin-Munive/Python-por-fragmentos-Libro-de-estudio) |
+| Bioinformatics | Protein sequence retrieval, motif filtering and scientific software documentation | [Proteios](https://github.com/Martin-Munive/NCBI-Web-Crawler-Proteios) |
+| Books and education | Executable books for computational and statistical reasoning | [Materia Medica Digitalis](https://github.com/Martin-Munive/Materia_Medica_Digitalis), [Statistics with Python](https://github.com/Martin-Munive/Estadistica-con-Python), [Python por Fragmentos](https://github.com/Martin-Munive/Python-por-fragmentos-Libro-de-estudio) |
 | Automation and bots | Community automation, message routing and operational utilities | [DISCORD Channels Bot](https://github.com/Martin-Munive/DISCORD_Channels-Bot) |
-| Data analysis | Forecasting, reproducible pipelines and exploratory dashboards | [MATER LOTTO](https://github.com/Martin-Munive/MATER_LOTTO), [Gastos Diarios](https://github.com/Martin-Munive/GASTOS_DIARIOS) |
+| Data analysis | Statistical learning, reproducible pipelines and exploratory tools | [Statistics with Python](https://github.com/Martin-Munive/Estadistica-con-Python), [Control Gastos Diarios](https://github.com/Martin-Munive/CONTROL_GASTOS_DIARIOS) |
 
 ## Current Focus
 
@@ -131,6 +110,7 @@ mindmap
 medicine       -> clinical reasoning, oncology, pediatric triage, medical education
 software       -> Python, JavaScript, local-first tools, data systems, automation
 retrieval      -> document workflows, traceable search, evaluation-aware prototypes
+statistics     -> clinical questions, uncertainty, modeling, reproducible evidence
 publishing     -> web books, scientific documentation, technical learning paths
 research tools -> bioinformatics utilities and reproducible computational workflows
 ```
