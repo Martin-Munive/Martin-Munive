@@ -55,13 +55,13 @@
 <polygon points="690.0,152.7 723.1,157.6 736.7,194.7 718.0,242.1 659.6,247.1 656.8,191.6 650.4,152.4" fill="#a78bfa" fill-opacity="0.22" stroke="#a78bfa" stroke-width="2" stroke-linejoin="round"/>
 <circle cx="690.0" cy="184.0" r="3" fill="#e5edf7"/>
 <text x="28" y="307" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" font-weight="700" fill="#94a3b8">CURRENT 7D</text>
-<text x="28" y="337" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#22c55e">14</text>
+<text x="28" y="337" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#22c55e">11</text>
 <line x1="166" y1="292" x2="166" y2="342" stroke="#243244"/>
 <text x="184" y="307" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" font-weight="700" fill="#94a3b8">ROLLING 30D</text>
 <text x="184" y="337" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#f59e0b">37</text>
 <line x1="322" y1="292" x2="322" y2="342" stroke="#243244"/>
 <text x="340" y="307" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" font-weight="700" fill="#94a3b8">4W MOMENTUM</text>
-<text x="340" y="337" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#22c55e">+3%</text>
+<text x="340" y="337" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#22c55e">+28%</text>
 <line x1="478" y1="292" x2="478" y2="342" stroke="#243244"/>
 <text x="496" y="307" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" font-weight="700" fill="#94a3b8">ACTIVE DAYS / 30</text>
 <text x="496" y="337" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#06b6d4">15/30</text>
