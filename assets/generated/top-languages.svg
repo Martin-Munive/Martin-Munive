@@ -21,19 +21,19 @@
 <circle cx="176" cy="126" r="4" fill="#38bdf8"/>
 <text x="176" y="117" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#e5edf7">Python</text>
 <text x="176" y="143" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" fill="#94a3b8">5 repos</text>
-<title>Python: 34.8% project-normalized signal across 5 repositories</title>
+<title>Python: 34.0% project-normalized signal across 5 repositories</title>
 <line x1="382" y1="211" x2="356" y2="111" stroke="#22c55e" stroke-width="1.5" opacity="0.45"/>
 <circle cx="356" cy="111" r="35.7" fill="#22c55e" fill-opacity="0.13" stroke="#22c55e" stroke-width="2"/>
 <circle cx="356" cy="111" r="4" fill="#22c55e"/>
 <text x="356" y="102" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#e5edf7">JavaScript</text>
 <text x="356" y="128" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" fill="#94a3b8">2 repos</text>
 <title>JavaScript: 16.9% project-normalized signal across 2 repositories</title>
-<line x1="382" y1="211" x2="530" y2="137" stroke="#f59e0b" stroke-width="1.4" opacity="0.45"/>
-<circle cx="530" cy="137" r="33.9" fill="#f59e0b" fill-opacity="0.13" stroke="#f59e0b" stroke-width="2"/>
+<line x1="382" y1="211" x2="530" y2="137" stroke="#f59e0b" stroke-width="1.5" opacity="0.45"/>
+<circle cx="530" cy="137" r="35.4" fill="#f59e0b" fill-opacity="0.13" stroke="#f59e0b" stroke-width="2"/>
 <circle cx="530" cy="137" r="4" fill="#f59e0b"/>
 <text x="530" y="128" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#e5edf7">CSS</text>
 <text x="530" y="154" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" fill="#94a3b8">4 repos</text>
-<title>CSS: 14.5% project-normalized signal across 4 repositories</title>
+<title>CSS: 16.5% project-normalized signal across 4 repositories</title>
 <line x1="382" y1="211" x2="660" y2="220" stroke="#a78bfa" stroke-width="1.3" opacity="0.45"/>
 <circle cx="660" cy="220" r="30.5" fill="#a78bfa" fill-opacity="0.13" stroke="#a78bfa" stroke-width="2"/>
 <circle cx="660" cy="220" r="4" fill="#a78bfa"/>
@@ -59,11 +59,11 @@
 <text x="175" y="300" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" fill="#94a3b8">2 repos</text>
 <title>TypeScript: 5.2% project-normalized signal across 2 repositories</title>
 <line x1="382" y1="211" x2="94" y2="207" stroke="#64748b" stroke-width="1.0" opacity="0.45"/>
-<circle cx="94" cy="207" r="24.0" fill="#64748b" fill-opacity="0.13" stroke="#64748b" stroke-width="2"/>
+<circle cx="94" cy="207" r="23.2" fill="#64748b" fill-opacity="0.13" stroke="#64748b" stroke-width="2"/>
 <circle cx="94" cy="207" r="4" fill="#64748b"/>
-<text x="94" y="198" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#e5edf7">PowerShell</text>
-<text x="94" y="224" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" fill="#94a3b8">1 repo</text>
-<title>PowerShell: 1.3% project-normalized signal across 1 repositories</title>
+<text x="94" y="198" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#e5edf7">HTML</text>
+<text x="94" y="224" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" fill="#94a3b8">3 repos</text>
+<title>HTML: 0.2% project-normalized signal across 3 repositories</title>
 <text x="28" y="366" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" fill="#94a3b8">Node size = normalized project signal. Each repository contributes the same total weight.</text>
 <text x="792" y="366" text-anchor="end" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" fill="#94a3b8">Source: GitHub Linguist API</text>
 </svg>
