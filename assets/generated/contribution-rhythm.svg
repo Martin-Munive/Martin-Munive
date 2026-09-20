@@ -17,22 +17,22 @@
 <line x1="36" y1="152.7" x2="535" y2="152.7" stroke="#243244" stroke-width="1" stroke-dasharray="3 7"/>
 <line x1="36" y1="195.3" x2="535" y2="195.3" stroke="#243244" stroke-width="1" stroke-dasharray="3 7"/>
 <line x1="36" y1="238.0" x2="535" y2="238.0" stroke="#243244" stroke-width="1" stroke-dasharray="3 7"/>
-<line x1="36" y1="203.6" x2="535" y2="203.6" stroke="#f59e0b" stroke-width="1" stroke-dasharray="8 6" opacity="0.75"/>
-<text x="533" y="197.6" text-anchor="end" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" fill="#f59e0b">AVG 5.9</text>
-<polygon points="36.0,238.0 36.0,110.0 81.4,214.7 126.7,238.0 172.1,232.2 217.5,179.8 262.8,168.2 308.2,203.1 353.5,156.5 398.9,232.2 444.3,238.0 489.6,232.2 535.0,238.0 535.0,238.0" fill="#06b6d4" fill-opacity="0.10"/>
-<polyline points="36.0,110.0 81.4,214.7 126.7,238.0 172.1,232.2 217.5,179.8 262.8,168.2 308.2,203.1 353.5,156.5 398.9,232.2 444.3,238.0 489.6,232.2 535.0,238.0" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="36.0" cy="110.0" r="4" fill="#0b1220" stroke="#f59e0b" stroke-width="2"><title>Cycle 1: 22 contributions</title></circle>
+<line x1="36" y1="200.7" x2="535" y2="200.7" stroke="#f59e0b" stroke-width="1" stroke-dasharray="8 6" opacity="0.75"/>
+<text x="533" y="194.7" text-anchor="end" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" fill="#f59e0b">AVG 4.1</text>
+<polygon points="36.0,238.0 36.0,201.4 81.4,238.0 126.7,228.9 172.1,146.6 217.5,128.3 262.8,183.1 308.2,110.0 353.5,228.9 398.9,238.0 444.3,228.9 489.6,238.0 535.0,238.0 535.0,238.0" fill="#06b6d4" fill-opacity="0.10"/>
+<polyline points="36.0,201.4 81.4,238.0 126.7,228.9 172.1,146.6 217.5,128.3 262.8,183.1 308.2,110.0 353.5,228.9 398.9,238.0 444.3,228.9 489.6,238.0 535.0,238.0" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="36.0" cy="201.4" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 1: 4 contributions</title></circle>
 <text x="36.0" y="258" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" fill="#94a3b8">-11W</text>
-<circle cx="81.4" cy="214.7" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 2: 4 contributions</title></circle>
-<circle cx="126.7" cy="238.0" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 3: 0 contributions</title></circle>
-<circle cx="172.1" cy="232.2" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 4: 1 contributions</title></circle>
-<circle cx="217.5" cy="179.8" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 5: 10 contributions</title></circle>
-<circle cx="262.8" cy="168.2" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 6: 12 contributions</title></circle>
-<circle cx="308.2" cy="203.1" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 7: 6 contributions</title></circle>
-<circle cx="353.5" cy="156.5" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 8: 14 contributions</title></circle>
-<circle cx="398.9" cy="232.2" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 9: 1 contributions</title></circle>
-<circle cx="444.3" cy="238.0" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 10: 0 contributions</title></circle>
-<circle cx="489.6" cy="232.2" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 11: 1 contributions</title></circle>
+<circle cx="81.4" cy="238.0" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 2: 0 contributions</title></circle>
+<circle cx="126.7" cy="228.9" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 3: 1 contributions</title></circle>
+<circle cx="172.1" cy="146.6" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 4: 10 contributions</title></circle>
+<circle cx="217.5" cy="128.3" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 5: 12 contributions</title></circle>
+<circle cx="262.8" cy="183.1" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 6: 6 contributions</title></circle>
+<circle cx="308.2" cy="110.0" r="4" fill="#0b1220" stroke="#f59e0b" stroke-width="2"><title>Cycle 7: 14 contributions</title></circle>
+<circle cx="353.5" cy="228.9" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 8: 1 contributions</title></circle>
+<circle cx="398.9" cy="238.0" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 9: 0 contributions</title></circle>
+<circle cx="444.3" cy="228.9" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 10: 1 contributions</title></circle>
+<circle cx="489.6" cy="238.0" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 11: 0 contributions</title></circle>
 <circle cx="535.0" cy="238.0" r="4" fill="#0b1220" stroke="#38bdf8" stroke-width="2"><title>Cycle 12: 0 contributions</title></circle>
 <text x="535.0" y="258" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" fill="#94a3b8">NOW</text>
 <polygon points="690.0,160.9 708.1,169.6 712.5,189.1 700.0,204.8 680.0,204.8 667.5,189.1 671.9,169.6" fill="none" stroke="#243244" stroke-width="1"/>
@@ -52,21 +52,21 @@
 <text x="605.2" y="207.4" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" fill="#94a3b8">S</text>
 <line x1="690.0" y1="184.0" x2="635.3" y2="140.4" stroke="#243244" stroke-width="1"/>
 <text x="622.0" y="133.8" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" fill="#94a3b8">S</text>
-<polygon points="690.0,147.1 735.0,148.1 746.1,196.8 707.8,220.9 661.4,243.3 641.9,195.0 635.3,140.4" fill="#a78bfa" fill-opacity="0.22" stroke="#a78bfa" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="690.0,143.0 740.2,144.0 730.0,193.1 707.8,220.9 659.6,247.1 650.0,193.1 635.3,140.4" fill="#a78bfa" fill-opacity="0.22" stroke="#a78bfa" stroke-width="2" stroke-linejoin="round"/>
 <circle cx="690.0" cy="184.0" r="3" fill="#e5edf7"/>
 <text x="28" y="307" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" font-weight="700" fill="#94a3b8">CURRENT 7D</text>
 <text x="28" y="337" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#22c55e">0</text>
 <line x1="166" y1="292" x2="166" y2="342" stroke="#243244"/>
 <text x="184" y="307" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" font-weight="700" fill="#94a3b8">ROLLING 30D</text>
-<text x="184" y="337" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#f59e0b">8</text>
+<text x="184" y="337" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#f59e0b">4</text>
 <line x1="322" y1="292" x2="322" y2="342" stroke="#243244"/>
 <text x="340" y="307" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" font-weight="700" fill="#94a3b8">4W MOMENTUM</text>
 <text x="340" y="337" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#ef4444">-95%</text>
 <line x1="478" y1="292" x2="478" y2="342" stroke="#243244"/>
 <text x="496" y="307" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" font-weight="700" fill="#94a3b8">ACTIVE DAYS / 30</text>
-<text x="496" y="337" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#06b6d4">4/30</text>
+<text x="496" y="337" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#06b6d4">3/30</text>
 <line x1="634" y1="292" x2="634" y2="342" stroke="#243244"/>
 <text x="652" y="307" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" font-weight="700" fill="#94a3b8">WEEKLY UPTIME</text>
-<text x="652" y="337" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#a78bfa">75%</text>
+<text x="652" y="337" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#a78bfa">67%</text>
 <text x="28" y="359" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" fill="#94a3b8">Telemetry derived from GitHub contribution data. Current week may be incomplete.</text>
 </svg>
